@@ -1,0 +1,23 @@
+.container{
+  background: orange;
+}
+
+.container ul li{
+  background: lime;
+}
+
+ul{
+  border: 1px solid red;
+}
+
+li{
+  border: 1px solid black;
+  height: 24px;
+}
+.container-fluid ul li{
+  background: lightgreen;
+}
+
+ul li.black-sheep{
+  background: black;
+}
