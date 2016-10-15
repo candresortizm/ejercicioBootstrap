@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/jquery.min.js" charset="utf-8"></script>
   <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
 </head>
 <body class="content-fluid">
   <ul class="nav nav-tabs">
@@ -26,6 +27,85 @@
     <li><a href="">Stores</a></li>
     <li><a href="">About Us</a></li>
     <li><a href="">Contact</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#miModalcito">Ingreso</a></li>
+    <li><a href="#">Registro</a></li>
   </ul>
+  <div id="miModalcito" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          <h4 class="modal-title" align="center">Inicia sesion</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-offset-3 col-md-6">
+                <div class="form-grup">
+                  <label>Email</label>
+                  <input type="email" class="form-control" required>
+                </div>
+                <div class="form-grup">
+                  <label>Password</label>
+                  <input type="password" class="form-control" required>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="panel-group" id="acordeon">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href="#panel1" data-toggle="collapse" data-parent="#acordeon">
+                  Desarrollo de aplicaciones
+                </a>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse in" id="panel1">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ut ullam soluta facilis cumque, iure placeat sit nemo mollitia. Unde repellat cumque suscipit, doloribus neque, similique. Ex atque excepturi iure!
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href="#panel2" data-toggle="collapse" class="colapsed" data-parent="#acordeon">
+                  Desarrollo de aplicaciones
+                </a>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse" id="panel2">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ut ullam soluta facilis cumque, iure placeat sit nemo mollitia. Unde repellat cumque suscipit, doloribus neque, similique. Ex atque excepturi iure!
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a href="#panel3" data-toggle="collapse" class="colapsed" data-parent="#acordeon">
+                  Desarrollo de aplicaciones
+                </a>
+              </h4>
+            </div>
+            <div class="panel-collapse collapse" id="panel3">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ut ullam soluta facilis cumque, iure placeat sit nemo mollitia. Unde repellat cumque suscipit, doloribus neque, similique. Ex atque excepturi iure!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
